@@ -1,0 +1,43 @@
+# ── Data is tracked (features, annotation caches, T_c) so the repo runs out of the box ──
+# Ignore only runtime-generated data artifacts:
+data/ogb/
+
+# ── Run artifacts (regenerated per run) ──
+logs/
+results/
+autoresearch/results/
+
+# ── Paper sources (kept out of the code release) ──
+paper/
+
+# ── One-off analysis / diagnostic scripts (not part of the pipeline) ──
+agg_*.py
+diag_*
+diag_agree/
+det_compare*.sbatch
+cora_hideg350.json
+cora_rand350.json
+
+# ── Configs: track only one example cell; others are derived (see README) ──
+configs/*
+!configs/wbXmod_cora_gcn_s0.json
+
+# ── Verification tooling (used while preparing this release; not shipped) ──
+_covrun.py
+_verifyrun.py
+_strip_deadcode.py
+_cov.sbatch
+_verify.sbatch
+_cov/
+_cov_baseline/
+_cov_verify/
+
+# ── Local tooling / editor state ──
+.claude/
+
+# ── Python ──
+**/__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.ipynb_checkpoints/
