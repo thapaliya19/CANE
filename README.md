@@ -1,7 +1,10 @@
-# CANE: Cluster-Aware Noise Estimation
+# Where LLM Annotators Fail: Label-Free Learning on Graphs with LLMs (EMNLP 2026)
 
 Official code for the paper **“Where LLM Annotators Fail: Label-Free Learning on
 Graphs with LLMs.”**
+
+[[Arxiv]](https://arxiv.org/abs/2605.27913)
+[[ACL Anthology]](https://aclanthology.org/2026.findings-emnlp.1231/)
 
 CANE is a **label-free** node-classification framework for text-attributed
 graphs. An LLM annotates a small budget of nodes zero-shot; CANE then estimates
